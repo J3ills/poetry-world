@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Dashboard</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <include src="../components/header.html"></include>
+    </div>
+
+    <div id="sidebar">
+        <include src="../components/sidebar.html"></include>
+    </div>
+
+    <main class="dashboard-container">
+        <h1>Hoş Geldiniz, Kullanıcı!</h1>
+        <p>Burada en sevdiğiniz şiirleri düzenleyebilir, paylaşabilir ve kaydedebilirsiniz.</p>
+        <section class="dashboard-actions">
+            <button onclick="addPoem()">Yeni Şiir Ekle</button>
+            <button onclick="viewPoems()">Şiirleri Görüntüle</button>
+        </section>
+        <div id="poem-list"></div>
+    </main>
+
+    <div id="footer">
+        <include src="../components/footer.html"></include>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

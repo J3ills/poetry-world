@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+    </div>
+
+    <div class="wrapper">
+        <main class="contact-container">
+            <h1>İletişim</h1>
+            <p>Bize ulaşmak için aşağıdaki formu doldurun:</p>
+            <form class="contact-form" method="post">
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Gönder</button>
+            </form>
+        </main>
+
+        <div id="footer" style="position: absolute; bottom: 0; width: 100%;">
+        </div>
+    </div>
+    
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
